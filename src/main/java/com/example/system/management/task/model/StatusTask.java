@@ -1,5 +1,8 @@
 package com.example.system.management.task.model;
 
+import lombok.Getter;
+
+@Getter
 public enum StatusTask {
     WAITING("в ожидании"),
     PROGRESS("в процессе"),
@@ -8,8 +11,5 @@ public enum StatusTask {
     private final String status;
     StatusTask(String status) {
         this.status = status;
-    }
-    public String getStatus() {
-        return status;
     }
 }
